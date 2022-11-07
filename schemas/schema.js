@@ -10,8 +10,6 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 import Home from "./documents/home";
 
 //objects
-import TextBlock from "./objects/textBlock";
-import ImageBlock from "./objects/imageBlock";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,7 +20,5 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     Home,
-    TextBlock,
-    ImageBlock,
   ]),
 });
