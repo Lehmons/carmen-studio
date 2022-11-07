@@ -5,7 +5,6 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 //blocks
-import HeadingOneTwoThreeNormalSmall from "./blocks/headingOneTwoThreeNormalSmall";
 
 //documents
 import Home from "./documents/home";
@@ -25,6 +24,5 @@ export default createSchema({
     Home,
     TextBlock,
     ImageBlock,
-    HeadingOneTwoThreeNormalSmall,
   ]),
 });
