@@ -5,10 +5,17 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
 //blocks
-
+import Editorial from "./blocks/editorial";
 //documents
+import Home from "./documents/home";
+import About from "./documents/about";
+import Project from "./documents/project";
 
 //objects
+import TextBlock from "./objects/textBlock";
+import ImageBlock from "./objects/imageBlock";
+import ImageGrid from "./objects/imageGrid";
+import LinkedPage from "./objects/linkedPage";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -18,5 +25,13 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    Home,
+    About,
+    Project,
+    TextBlock,
+    ImageBlock,
+    ImageGrid,
+    LinkedPage,
+    Editorial,
   ]),
 });
