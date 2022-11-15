@@ -1,1 +1,1 @@
-export default [{ type: "projectPage" }];
+export default [{ type: "project" }];

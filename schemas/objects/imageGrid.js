@@ -4,17 +4,17 @@ export default {
   title: "Image Grid",
   fields: [
     {
-      title: "Image",
-      name: "image",
-      type: "image",
-      of: [{ type: "imageBlock" }, { type: "imageBlock" }],
+      title: "Images",
+      name: "images",
+      type: "array",
+      of: [{ type: "imageBlock" }],
       validation: (Rule) => Rule.required().min(2),
     },
   ],
   preview: {
     select: {
-      title: "image.alt",
-      media: "image",
+      title: "images[0].image.alt",
+      media: "images[0].image",
     },
   },
 };

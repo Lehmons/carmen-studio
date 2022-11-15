@@ -4,11 +4,6 @@ export default {
   title: "Image Block",
   fields: [
     {
-      name: "margin",
-      title: "Margin",
-      type: "boolean",
-    },
-    {
       title: "Image",
       name: "image",
       type: "image",

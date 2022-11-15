@@ -1,25 +1,27 @@
+import documentTypes from "./documentTypes";
+
 export default {
   title: "Linked Page",
   type: "object",
   name: "linkedPage",
   fields: [
     {
-      // string (link title)
       title: "Link title",
       name: "linkTitle",
       type: "string",
+      placeholder: "Depop",
     },
     {
-      name: "projectPage",
-      title: "Project Page",
+      name: "linkedPage",
+      title: "Linked Page",
       type: "reference",
-      to: [{ type: "projectPage" }],
+      to: documentTypes,
       validation: (Rule) => Rule.required(),
     },
   ],
   preview: {
     select: {
-      title: "projectPage.title",
+      title: "linkedPage.title",
     },
     prepare({ title }) {
       return {

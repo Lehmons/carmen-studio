@@ -1,4 +1,4 @@
-import documentTypes from "../objects/documentTypes.js";
+import documentTypes from "../objects/documentTypes";
 
 export default {
   title: "Content",

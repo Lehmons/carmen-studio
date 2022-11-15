@@ -4,6 +4,11 @@ export default {
   title: "Project",
   fields: [
     {
+      title: "Live",
+      name: "live",
+      type: "boolean",
+    },
+    {
       title: "Title",
       name: "title",
       type: "string",
@@ -21,14 +26,29 @@ export default {
       },
     },
     {
+      title: "Featured Image",
+      name: "featuredImage",
+      type: "imageBlock",
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      title: "Blocks",
+      name: "blocks",
+      type: "array",
+      of: [
+        { type: "singleImage" },
+        { type: "imageGrid" },
+        // { type: "video" },
+      ],
+    },
+    {
       title: "Tags",
       name: "tags",
       type: "array",
-      of: [
-        { type: "doubleImageTextBlock" },
-        { type: "doubleImageBlock" },
-        { type: "imageBlock" },
-      ],
+      of: [{ type: "string" }],
+      options: {
+        layout: "tags",
+      },
     },
     {
       title: "Blurb",

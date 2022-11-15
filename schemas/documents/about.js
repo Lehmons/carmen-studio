@@ -21,10 +21,14 @@ export default {
       },
     },
     {
-      title: "Two Column Block",
-      name: "twoColumnBlock",
-      type: "array",
-      of: [{ type: "title" }, { type: "textBlock" }],
+      title: "Hero Text",
+      name: "heroText",
+      type: "editorial",
+    },
+    {
+      title: "Two Column Text Block",
+      name: "twoColumnTextBlock",
+      type: "twoColumnTextBlock",
     },
     {
       title: "Get In Touch",
