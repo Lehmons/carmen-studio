@@ -15,6 +15,11 @@ export default {
       type: "boolean",
     },
     {
+      title: "Caption",
+      name: "caption",
+      type: "simple",
+    },
+    {
       title: "Size",
       name: "size",
       type: "string",

@@ -1,8 +1,15 @@
+import {
+  orderRankField,
+  orderRankOrdering,
+} from "@sanity/orderable-document-list";
 export default {
   type: "document",
   name: "project",
   title: "Project",
+  // Optional: The plugin also exports a set of 'orderings' for use in other Document Lists
+  orderings: [orderRankOrdering],
   fields: [
+    orderRankField({ type: "project", hidden: true }),
     {
       title: "Live",
       name: "live",
@@ -38,6 +45,7 @@ export default {
       of: [
         { type: "singleImage" },
         { type: "imageGrid" },
+        { type: "projectText" },
         // { type: "video" },
       ],
     },

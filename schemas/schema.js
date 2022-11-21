@@ -6,6 +6,8 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 //blocks
 import Editorial from "./blocks/editorial";
+import Simple from "./blocks/simple";
+
 //documents
 import Home from "./documents/home";
 import About from "./documents/about";
@@ -13,6 +15,7 @@ import Project from "./documents/project";
 
 //objects
 import TextBlock from "./objects/textBlock";
+import ProjectText from "./objects/projectText";
 import ImageBlock from "./objects/imageBlock";
 import ImageGrid from "./objects/imageGrid";
 import LinkedPage from "./objects/linkedPage";
@@ -37,5 +40,7 @@ export default createSchema({
     LinkedPage,
     Editorial,
     SingleImage,
+    Simple,
+    ProjectText,
   ]),
 });
