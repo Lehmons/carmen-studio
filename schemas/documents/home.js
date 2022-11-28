@@ -39,4 +39,16 @@ export default {
       of: [{ type: "linkedPage" }],
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+      media: "images[0].imageBlock.image.asset", //get the first image block of the array to use in media preview
+    },
+    prepare({ title, media }) {
+      return {
+        title: title ? title : "No title defined",
+        media,
+      };
+    },
+  },
 };
