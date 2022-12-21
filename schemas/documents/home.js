@@ -16,7 +16,7 @@ export default {
     },
     {
       title: "Featured Project Link",
-      name: "FeaturedprojectLink",
+      name: "featuredProjectLink",
       type: "reference",
       to: [{ type: "project" }],
       validation: (Rule) => Rule.required(),
@@ -28,7 +28,7 @@ export default {
     },
     {
       title: "Featured Project Link 2",
-      name: "FeaturedprojectLink2",
+      name: "featuredProjectLink2",
       type: "reference",
       to: [{ type: "project" }],
     },

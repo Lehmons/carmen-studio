@@ -21,6 +21,7 @@ import ImageGrid from "./objects/imageGrid";
 import LinkedPage from "./objects/linkedPage";
 import SingleImage from "./objects/singleImage";
 import TwoColumnTextBlock from "./objects/twoColumnTextBlock";
+import ColumnTextBlock from "./objects/columnTextBlock";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -42,5 +43,6 @@ export default createSchema({
     SingleImage,
     Simple,
     ProjectText,
+    ColumnTextBlock,
   ]),
 });

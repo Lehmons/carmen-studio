@@ -12,7 +12,7 @@ export default {
       title: "Paragraphs",
       name: "paragraphs",
       type: "array",
-      of: [{ type: "text" }],
+      of: [{ type: "columnTextBlock" }],
     },
   ],
   preview: {

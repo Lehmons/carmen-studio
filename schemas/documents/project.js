@@ -29,7 +29,7 @@ export default {
         source: "title",
         maxLength: 200, // will be ignored if slugify is set
         slugify: (input) =>
-          `/projects/${input.toLowerCase().replace(/\s+/g, "-").slice(0, 200)}`,
+          `/work/${input.toLowerCase().replace(/\s+/g, "-").slice(0, 200)}`,
       },
     },
     {
@@ -61,6 +61,11 @@ export default {
     {
       title: "Blurb",
       name: "blurb",
+      type: "string",
+    },
+    {
+      title: "Blurb Line Two",
+      name: "blurbLineTwo",
       type: "string",
     },
   ],
