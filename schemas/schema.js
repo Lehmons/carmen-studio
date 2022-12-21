@@ -12,10 +12,12 @@ import Simple from "./blocks/simple";
 import Home from "./documents/home";
 import About from "./documents/about";
 import Project from "./documents/project";
+import Footer from "./documents/footer";
 
 //objects
 import TextBlock from "./objects/textBlock";
 import ProjectText from "./objects/projectText";
+import FooterLink from "./objects/footerLink";
 import ImageBlock from "./objects/imageBlock";
 import ImageGrid from "./objects/imageGrid";
 import LinkedPage from "./objects/linkedPage";
@@ -34,6 +36,8 @@ export default createSchema({
     Home,
     About,
     Project,
+    Footer,
+    FooterLink,
     TextBlock,
     TwoColumnTextBlock,
     ImageBlock,

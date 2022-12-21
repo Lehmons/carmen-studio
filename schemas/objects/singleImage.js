@@ -1,3 +1,5 @@
+import toPlainText from "../../lib/toPlainText";
+
 export default {
   title: "Single Image",
   name: "singleImage",
@@ -34,4 +36,19 @@ export default {
       },
     },
   ],
+  preview: {
+    select: {
+      size: "size",
+      caption: "caption",
+      media: "image.image",
+    },
+    prepare: ({ size, caption, media }) => {
+      const prettyTitle = caption ? toPlainText(caption) : " ";
+      return {
+        title: prettyTitle,
+        subtitle: size,
+        media,
+      };
+    },
+  },
 };

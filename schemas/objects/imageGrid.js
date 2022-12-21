@@ -16,5 +16,12 @@ export default {
       title: "images[0].image.alt",
       media: "images[0].image",
     },
+    prepare: ({ title, media }) => {
+      return {
+        title,
+        media,
+        subtitle: "grid",
+      };
+    },
   },
 };

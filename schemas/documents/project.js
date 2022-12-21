@@ -33,6 +33,12 @@ export default {
       },
     },
     {
+      title: "Description",
+      name: "description",
+      type: "editorial",
+      validation: (Rule) => Rule.required(),
+    },
+    {
       title: "Featured Image",
       name: "featuredImage",
       type: "imageBlock",
@@ -67,6 +73,11 @@ export default {
       title: "Blurb Line Two",
       name: "blurbLineTwo",
       type: "string",
+    },
+    {
+      title: "Credits",
+      name: "credits",
+      type: "simple",
     },
   ],
   preview: {
