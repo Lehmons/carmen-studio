@@ -42,11 +42,5 @@ export default {
       title: "title",
       blocks: "blocks.length",
     },
-    prepare({ title, blocks }) {
-      return {
-        title: title ? title : "No title defined",
-        subtitle: blocks ? `${blocks} blocks` : "No blocks defined",
-      };
-    },
   },
 };
