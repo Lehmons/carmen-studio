@@ -52,6 +52,7 @@ export default {
         { type: "singleImage" },
         { type: "imageGrid" },
         { type: "projectText" },
+        { type: "projectVideo" },
         // { type: "video" },
       ],
     },

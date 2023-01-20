@@ -16,6 +16,7 @@ import Footer from "./documents/footer";
 
 //objects
 import TextBlock from "./objects/textBlock";
+import ProjectVideo from "./objects/projectVideo";
 import ProjectText from "./objects/projectText";
 import FooterLink from "./objects/footerLink";
 import ImageBlock from "./objects/imageBlock";
@@ -34,6 +35,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     Home,
+    ProjectVideo,
     About,
     Project,
     Footer,
