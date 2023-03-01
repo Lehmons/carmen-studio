@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "@babel/cli": "^7.19.3",
+    "@mux/mux-player": "^1.8.0",
     "@sanity/base": "^2.35.0",
     "@sanity/cli": "^2.35.0",
     "@sanity/core": "^2.35.0",
